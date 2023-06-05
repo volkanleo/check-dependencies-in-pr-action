@@ -1,5 +1,5 @@
-name: 'Check Dependencies In Pull Request'
-description: 'A Github Action that publishes a comment in your PR notifying what Gradle dependencies need to be updated'
+name: 'Check Dependencies In Pull Request For Maven'
+description: 'A Github Action that publishes a comment in your PR notifying what Maven dependencies need to be updated'
 inputs:
   pull_request_url:
     description: 'Pull request url'
