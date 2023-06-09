@@ -10,7 +10,7 @@ then
 else
   dependency_updates=$(echo "$dependency_updates" | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g')
   countOutdated=$(echo "$dependency_updates" | wc -l)
-  message="❌ **You have $countOutdated plugins with newer available releases:**\n$dependency_updates"
+  message="❌ WARNING: **You have $countOutdated dependencies or microservices have updates available:**\n$dependency_updates"
 fi
 
 curl \
